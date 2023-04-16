@@ -2,6 +2,8 @@
 
 This is a Telegram bot integrated with OpenAI. Currently it allows interaction with Chat GPT 3.5 and image generation.
 
+This app doesn't save any information to the database.
+
 ## Gems
 
 The main gems are:
@@ -28,7 +30,7 @@ Then you need to:
       - Set `OPENAI_SECRET_KEY` to your OpenAI secret key.
 4. Execute it with: `ruby lib/main.rb`
 
-## How to use interact with the bot
+## How to interact with the bot
 
 This chatbot has the following commands:
 
@@ -38,8 +40,12 @@ This chatbot has the following commands:
 - **/help**: Show brief instructions and available commands.
 
 The bot will initially be in the chat mode.
+
 In the chat mode you can interact with Chat GPT but you can't ask it to generate images.
 To do that you need to change to image mode (`/image`) and then ask to generate an image.
+
+The bot keeps conversation context to allow Chat GPT refer to prior messages.
+But this is limited to OpenAI [Token](https://platform.openai.com/docs/introduction/tokens) count and long conversations might generate errors.
 
 This bot follows OpenAI restriction while you interact with it.
 
