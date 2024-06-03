@@ -39,9 +39,9 @@ This chatbot has the following commands:
 - **/image**: Change to image mode.
 - **/help**: Show brief instructions and available commands.
 
-The bot will initially be in the chat mode.
+The bot will initially be in chat mode.
 
-In the chat mode you can interact with Chat GPT but you can't ask it to generate images.
+In chat mode you can interact with Chat GPT but you can't ask it to generate images.
 To do that you need to change to image mode (`/image`) and then ask to generate an image.
 
 The bot keeps conversation context to allow Chat GPT refer to prior messages.
